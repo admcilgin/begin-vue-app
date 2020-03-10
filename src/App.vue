@@ -2,11 +2,13 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld :message="message"/>
+    <dummy-button />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import DummyButton from './components/DummyButton.vue'
 
 export default {
   name: 'app',
@@ -16,7 +18,8 @@ export default {
     }
   },
   components: {
-    HelloWorld
+    HelloWorld,
+    DummyButton
   },
   methods:  {
     getData: async function () {
